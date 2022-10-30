@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
-import { ItemTextConstants, URLConstants } from "./utils/constants";
+import { ItemTextConstants, URLConstants } from "../utils/constants";
 
 const ModalWrapper = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

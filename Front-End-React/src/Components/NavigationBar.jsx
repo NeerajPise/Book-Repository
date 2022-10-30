@@ -1,6 +1,6 @@
 import { Box, Button } from "@chakra-ui/react";
-import { StringConstants } from "./utils/constants";
-import { styles } from "./utils/projectStyles";
+import { StringConstants } from "../utils/constants";
+import { styles } from "../utils/projectStyles";
 
 const NavigationBar = (props) => {
   let title;

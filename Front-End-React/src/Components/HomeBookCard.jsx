@@ -4,9 +4,9 @@ import {
   ItemTextConstants,
   StringConstants,
   URLConstants,
-} from "./utils/constants";
+} from "../utils/constants";
 import { AddIcon, CheckIcon } from "@chakra-ui/icons";
-import { styles } from "./utils/projectStyles";
+import { styles } from "../utils/projectStyles";
 
 const HomeBookCard = (props) => {
   const addBookToLibrary = () => {

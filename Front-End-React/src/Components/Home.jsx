@@ -3,8 +3,8 @@ import { useState } from "react";
 import BookList from "./BookList";
 import HomeBodyContent from "./HomeBodyContent";
 import NavigationBar from "./NavigationBar";
-import { StringConstants } from "./utils/constants";
-import { styles } from "./utils/projectStyles";
+import { StringConstants } from "../utils/constants";
+import { styles } from "../utils/projectStyles";
 
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState(StringConstants.HOME);

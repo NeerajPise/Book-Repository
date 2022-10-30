@@ -11,12 +11,12 @@ import {
 import { useState } from "react";
 import HomeBookCard from "./HomeBookCard";
 import axios from "axios";
-import { getPlainISBN, validateISBN } from "./utils/bookUtils";
+import { getPlainISBN, validateISBN } from "../utils/bookUtils";
 import {
   ItemTextConstants,
   StringConstants,
   URLConstants,
-} from "./utils/constants";
+} from "../utils/constants";
 
 const HomeBodyContent = () => {
   const [ISBN, setISBN] = useState(StringConstants.EMPTY_STRING);

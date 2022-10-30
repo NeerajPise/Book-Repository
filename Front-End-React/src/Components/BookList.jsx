@@ -14,8 +14,8 @@ import {
   ItemTextConstants,
   StringConstants,
   URLConstants,
-} from "./utils/constants";
-import { styles } from "./utils/projectStyles";
+} from "../utils/constants";
+import { styles } from "../utils/projectStyles";
 
 const BookList = () => {
   const [storedBookList, setStoredBookList] = useState([]);
