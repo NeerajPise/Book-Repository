@@ -23,6 +23,8 @@ const HomeBodyContent = () => {
   const [book, setBook] = useState(StringConstants.EMPTY_STRING);
   const [error, setError] = useState(false);
 
+  //This function validates the ISBN (using the validateISBN method written in the utils file in ../utils/bookUtils)
+  // and first checks the database for searching in stored books or else calls the Google API to retrieve information
   const searchBook = () => {
     let ISBNValidateString = getPlainISBN(ISBN);
 
@@ -66,6 +68,7 @@ const HomeBodyContent = () => {
     }
   };
 
+  //Handles screen change after adding a book to the library
   const addedToLibrary = () => {
     setBook(StringConstants.ADDED_TO_LIBRARY);
   };

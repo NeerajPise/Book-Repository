@@ -9,6 +9,8 @@ import { styles } from "../utils/projectStyles";
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState(StringConstants.HOME);
 
+  //Method to change the current screen based on whether we want to show
+  // the booklist or ISBN finder homepage
   const changeScreen = () => {
     if (currentScreen === StringConstants.HOME) {
       setCurrentScreen(StringConstants.BOOKS);

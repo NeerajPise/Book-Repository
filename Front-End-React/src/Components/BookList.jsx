@@ -20,6 +20,8 @@ import { styles } from "../utils/projectStyles";
 const BookList = () => {
   const [storedBookList, setStoredBookList] = useState([]);
 
+  //After updating the notes in database, this method will be called to set the
+  // booklist stored in the state with updated notes
   const updateBookListNotes = (newBook) => {
     let newBookList = storedBookList.map((oldBook) => {
       if (oldBook.id === newBook.id) {
@@ -88,6 +90,8 @@ const BookList = () => {
                 <Button
                   colorScheme={"red"}
                   size={"sm"}
+                  //onClick function deletes book from library and database and updates state according
+                  // to the modified booklist
                   onClick={() => {
                     axios
                       .delete(`${URLConstants.DELETE_BOOK + item.isbn}`)

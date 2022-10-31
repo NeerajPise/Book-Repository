@@ -18,6 +18,7 @@ const ModalWrapper = (props) => {
 
   const [notesValue, setNotesValue] = useState(props.bookDetails.notes);
 
+  //Function handles book note modification and updates changes in database
   const updateNotes = () => {
     let updatedBookDetails = { ...props.bookDetails, notes: notesValue };
     props.updateBookListNotes(updatedBookDetails);

@@ -1,8 +1,10 @@
+//Regex to get a plain string of ISBN without extra characters ('-', etc)
 export const getPlainISBN = (ISBN) => {
   let updatedISBN = ISBN.replace(/[^0-9X]/gi, "");
   return updatedISBN;
 };
 
+//Checks ISBN validity based on the rules mentioned in assessment guidelines
 export const validateISBN = (ISBNValidateString) => {
   if (ISBNValidateString.length !== 13) {
     return false;

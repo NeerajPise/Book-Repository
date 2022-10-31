@@ -1,3 +1,5 @@
+//Stylesheet to store formattings to be applied to component elements
+
 export const styles = {
   bookListCard: {
     backgroundColor: "#f1eaf4",

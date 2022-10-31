@@ -9,6 +9,7 @@ import { AddIcon, CheckIcon } from "@chakra-ui/icons";
 import { styles } from "../utils/projectStyles";
 
 const HomeBookCard = (props) => {
+  //Function to add a book to user's library (and save in database)
   const addBookToLibrary = () => {
     delete props.book.exists;
     axios
